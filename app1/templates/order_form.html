@@ -1,0 +1,17 @@
+<div class="order-form">
+    <form method="POST">
+        {% csrf_token %}
+        <label>Customer: </label>
+        <input type="text" name="customer" id="id_customer" value="{{ data.customer }}"><br>
+        <label>Product: </label>
+        <input type="text" name="product" id="id_product" value="{{ data.product }}"><br>
+        <label>Price: </label>
+        <input type="text" name="price" id="id_price" value="{{ data.price }}"><br>
+        <label>Qty: </label>
+        <input type="text" name="Qty" id="id_Qty" value="{{ data.Qty }}"><br>
+        <label>Total price: </label>
+        <input type="text" name="total_price" id="id_total_price" value="{{ data.total_price }}"><br>
+        
+        <input type="submit" value="submit" class="text-uppercase">
+    </form>
+</div>

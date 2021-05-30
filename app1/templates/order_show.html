@@ -1,0 +1,12 @@
+{% for i in data reversed %}
+
+    <h1>customer name : {{ i.customer }}</h1>
+    <h1>product : {{ i.product }}</h1>
+    <h1>price : {{ i.price }}</h1>
+    <h1>Qty : {{ i.Qty }}</h1>
+    <h1>Total price : {{ i.total_price }}</h1>
+
+    <a href="{% url 'update_info' i.id %}">Update</a>
+    <a href="{% url 'delete_info' i.id %}">Delete</a><br><br>
+
+{% endfor %}
